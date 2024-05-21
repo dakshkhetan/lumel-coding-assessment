@@ -99,9 +99,10 @@ const Table = ({ data: initialData, columns }) => {
 						(sum, child) => sum + child.value,
 						0
 					);
-					const originalValue = initialData.find(
-						(r) => r.id === row.id
-					).value;
+					// const originalValue = initialData.find(
+					// 	(r) => r.id === row.id
+					// ).value;
+					const originalValue = row.value;
 
 					updatedRow.variance = (
 						((updatedRow.value - originalValue) / originalValue) *
