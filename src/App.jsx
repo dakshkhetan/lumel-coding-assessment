@@ -12,7 +12,7 @@ import "@fontsource/roboto/700.css";
 import "@/styles/global.scss";
 
 const App = () => {
-	// useWebsiteVisitNotifier();
+	useWebsiteVisitNotifier();
 
 	return (
 		<>
